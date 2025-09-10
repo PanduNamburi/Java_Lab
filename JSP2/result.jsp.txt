@@ -1,0 +1,14 @@
+<html>
+<body>
+<%
+	String uname = request.getParameter("username");
+	String age = request.getParameter("age");
+%>
+<h2> Using scriptlets & Implicit Objects</h2>
+<p> Hello <%=uname%>, you are <%=age%> years old.</p>
+<hr>
+<h2> Using Expression Language (EL)</h2>
+<p> name: ${param.username}</p>
+<p> Age: ${param.age}</p>
+</body>
+</html>
